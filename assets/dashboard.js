@@ -32,7 +32,7 @@ $(document).ready(function() {
             startAngle: -90,
             endAngle: 90,
             background: {
-                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#FFFFFF',
+                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#d5d5d5',
                 innerRadius: '60%',
                 outerRadius: '100%',
                 shape: 'arc'
@@ -46,9 +46,9 @@ $(document).ready(function() {
         // the value axis
         yAxis: {
             stops: [
-                [0.1, '#55BF3B'],
-                [0.5, '#DDDF0D'],
-                [0.9, '#DF5353']
+                [0.1, '#b7eb8f'],
+                [0.5, '#faad14'],
+                [0.9, '#5c0011']
             ],
             lineWidth: 0,
             minorTickInterval: null,
@@ -64,7 +64,7 @@ $(document).ready(function() {
         plotOptions: {
             solidgauge: {
                 dataLabels: {
-                    y: 5,
+                    y: 8,
                     borderWidth: 0,
                     useHTML: true
                 }
@@ -87,8 +87,8 @@ $(document).ready(function() {
             data: [0],
             dataLabels: {
                 format: '<div style="text-align:center"><span style="font-size:28px;color:' +
-                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span>' +
-                    '<span style="font-size:12px;color:silver">%</span></div>'
+                    ("#5e5047") + '">{y}</span>' +
+                    '<span style="font-size:12px;color:#6d6058">%</span></div>'
             },
             tooltip: {
                 valueSuffix: ' %'
@@ -111,8 +111,8 @@ $(document).ready(function() {
             data: [0],
             dataLabels: {
                 format: '<div style="text-align:center"><span style="font-size:25px;color:' +
-                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
-                    '<span style="font-size:12px;color:silver">MB</span></div>'
+                    ("#5e5047") + '">{y:.1f}</span><br/>' +
+                    '<span style="font-size:12px;color:#6d6058">MB</span></div>'
             },
             tooltip: {
                 valueSuffix: ' MB'
@@ -135,8 +135,8 @@ $(document).ready(function() {
             data: [0],
             dataLabels: {
                 format: '<div style="text-align:center"><span style="font-size:12px;color:' +
-                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
-                    '<span style="font-size:10px;color:silver">MB</span></div>'
+                    ("#5e5047") + '">{y:.1f}</span><br/>' +
+                    '<span style="font-size:10px;color:#6d6058">MB</span></div>'
             },
             tooltip: {
                 valueSuffix: ' MB'
@@ -159,8 +159,8 @@ $(document).ready(function() {
             data: [0],
             dataLabels: {
                 format: '<div style="text-align:center"><span style="font-size:12px;color:' +
-                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
-                    '<span style="font-size:10px;color:silver">MB</span></div>'
+                    ("#5e5047") + '">{y:.1f}</span><br/>' +
+                    '<span style="font-size:10px;color:#6d6058">MB</span></div>'
             },
             tooltip: {
                 valueSuffix: ' MB'
@@ -183,8 +183,8 @@ $(document).ready(function() {
             data: [0],
             dataLabels: {
                 format: '<div style="text-align:center"><span style="font-size:12px;color:' +
-                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
-                    '<span style="font-size:10px;color:silver">MB</span></div>'
+                    ("#5e5047") + '">{y:.1f}</span><br/>' +
+                    '<span style="font-size:10px;color:#6d6058">MB</span></div>'
             },
             tooltip: {
                 valueSuffix: ' MB'
@@ -207,8 +207,8 @@ $(document).ready(function() {
             data: [0],
             dataLabels: {
                 format: '<div style="text-align:center"><span style="font-size:12px;color:' +
-                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
-                    '<span style="font-size:10px;color:silver">GB</span></div>'
+                    ("#5e5047") + '">{y:.1f}</span><br/>' +
+                    '<span style="font-size:10px;color:#6d6058">GB</span></div>'
             },
             tooltip: {
                 valueSuffix: ' GB'

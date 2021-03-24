@@ -1,0 +1,120 @@
+/* head */
+.navbar-default {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  box-shadow: 0px 1px 3px #ccc;
+}
+.navbar-default .navbar-brand {
+  color: #555;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #555;
+}
+.navbar-brand {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #555;
+  background-color: #fff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #fff;
+}
+.dropdown-menu {
+  display: block;
+  transform-origin: 100% 0%;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+.open > .dropdown-menu {
+  transform: scale(1);
+}
+.dropdown-menu > li > a {
+  color: #555;
+  transition: 0.5s all ease;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #fff;
+  background-color: #666;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #eee;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #555;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #555;
+  }
+}
+
+.logo-img {
+  width: 200px;
+  height: 145px;
+}
+.text-center{
+  color: #fff;
+}
+a{color: #688d89;}
+a:hover,a:focus{color: #688d89;}
+
+@keyframes logoAni{
+  0%{
+    position: relative;
+    left: 0;
+    transform: scaleX(1);
+  }
+  48%{
+    position: relative;
+    left: 100%;
+    transform: scaleX(1);
+  }
+  52%{
+    position: relative;
+    left: 110%;
+    transform: scaleX(-1);
+  }
+  96%{
+    position: relative;
+    left: 0%;
+    transform: scaleX(-1);
+  }
+  100%{
+    position: relative;
+    left: 0%;
+    transform: scaleX(1);
+  }
+}
+.logo-ani-cls{
+  transform-origin: 50% 50%;
+  animation: logoAni 6s ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ani {
+  0%{
+    opacity: 0.6;
+    transform: translateY(-15px) scale(0.95);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.ani-cls{
+  animation: ani 0.5s;
+}
