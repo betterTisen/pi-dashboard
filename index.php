@@ -53,7 +53,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" style="padding-top: 50px;">
         <div class="row">
             <div class="col-md-3">
                 <div style="text-align: center; padding: 20px 0;"><img class="logo-img" src="assets/devices/raspberry-pi.png" /></div>

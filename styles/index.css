@@ -1,5 +1,10 @@
 /* head */
 .navbar-default {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
   background-color: #fff;
   color: #333;
   border: none;
